@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href='styles.css' />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Our Solar System</title>
+	</head>
+	<body>
+
+        <div class="bg-animation">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+            <div id="stars4"></div>
+        </div>
+
+        <div id='loading'>Loading...</div>
+
+		<div class="card-wrapper">
+			<div id="wrapper-bio"></div>
+
+            <img src='./images/rotating-globe.gif'>
+
+            <div id="inputs">
+                <label for='distanceLabel''>Max. Distance from Earth:  <output for='distanceLabel' id='distanceSlider'>0</output> light-years</label>
+                <input id='distanceLabel' type='range' min='1' max='2000' value='0' step='1' oninput='updateDistanceLabel(value)'>
+            </div>
+            
+			<div class="buttons">
+				<button id="previous-planet">Previous</button>
+				<button id="next-planet">Next</button>
+			</div>
+         
+		</div>
+	</body>
+	<script src="index.js"></script>
+</html>
