@@ -11,7 +11,7 @@ const options = {
 
 let distance = distanceInput.value;
 let currentCount = 0;
-let arrayLength = null
+let arrayLength = 0;
 
 function displayLoader() {
 	loader.classList.add('display');
