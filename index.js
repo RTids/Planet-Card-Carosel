@@ -3,6 +3,20 @@ const loader = document.getElementById('loading');
 const distanceInput = document.getElementById('distanceLabel');
 let distanceSliderValue = document.getElementById('distanceSlider');
 
+const follower = document.getElementById('cursorFollower')
+const followerHeight = follower.offsetHeight
+const followerWidth = follower.offsetWidth
+
+window.addEventListener('mousemove', function(e){
+e.preventDefault()
+
+let x = e.clientX - followerWidth / 2
+let y = e.clientY - followerHeight / 2
+
+follower.style.transform = `translate(${x}px, ${y}px)`
+
+})
+
 const options = {
 	method: 'GET',
 	headers: { 'X-Api-Key': key },
