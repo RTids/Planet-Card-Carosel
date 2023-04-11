@@ -84,6 +84,12 @@ img {
     right: 10%;
 }
 
+.rocket {
+	position: absolute;
+	top: 10%;
+	right: 5%;
+}
+
 #loading {
 	position: absolute;
 	top: 50%;
